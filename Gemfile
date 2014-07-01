@@ -38,3 +38,33 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# project gems
+
+# using haml
+gem 'haml-rails'
+
+#use thin and unicorn
+gem "thin", ">= 1.5.0", :group => [:development, :test]
+gem "unicorn", ">= 4.3.1", :group => :production
+
+#postgresql database
+gem "pg"
+
+# development helpers
+gem "better_errors", :group => :development
+gem "binding_of_caller", :group => :development, :platforms => [:mri_19, :rbx]
+
+# quiet assets
+gem 'quiet_assets'
+
+# bootstrap sass
+gem 'bootstrap-sass'
+
+# testing with factory girl and rspec
+gem 'factory_girl_rails', :group => [ :development, :test ]
+gem 'rspec-rails', :group => [ :development, :test ]
+gem 'dotenv-rails', :group => [ :development, :test ]
+
+# added pagination and forms enhancement
+gem 'simple_form'
+gem 'kaminari'

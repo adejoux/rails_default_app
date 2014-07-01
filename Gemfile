@@ -43,6 +43,9 @@ gem 'spring',        group: :development
 # using haml
 gem 'haml-rails'
 
+# create tasks with Thor
+gem 'thor'
+
 # add javascript runtime
 gem 'therubyracer', :platform=>:ruby
 

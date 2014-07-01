@@ -43,6 +43,9 @@ gem 'spring',        group: :development
 # using haml
 gem 'haml-rails'
 
+# add javascript runtime
+gem 'therubyracer', :platform=>:ruby
+
 #use thin and unicorn
 gem "thin", ">= 1.5.0", :group => [:development, :test]
 gem "unicorn", ">= 4.3.1", :group => :production
@@ -59,6 +62,7 @@ gem 'quiet_assets'
 
 # bootstrap sass
 gem 'bootstrap-sass'
+gem 'autoprefixer-rails'
 
 # testing with factory girl and rspec
 gem 'factory_girl_rails', :group => [ :development, :test ]
